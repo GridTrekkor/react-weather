@@ -1,26 +1,22 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+// import './App.css';
+import Weather from './components/weather';
 
-const App: React.FC = () => {
+export default function App () {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Weather/>
   );
 }
 
-export default App;
+
+// <div>
+//     <div>Weather component</div>
+//     {!!Object.keys(weather).length && 
+//         <>
+//         <div>Temperature: {lib.fTemp(weather.temperature.value)}</div>
+//         <div>Dewpoint: {lib.fTemp(weather.dewpoint.value)}</div>
+//         <div>Pressure: {lib.pressure(weather.barometricPressure.value)}</div>
+//         </>
+//     }
+
+// </div>

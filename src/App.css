@@ -31,3 +31,10 @@
     transform: rotate(360deg);
   }
 }
+
+.draggable {
+  cursor: move; /* fallback if grab cursor is unsupported */
+  cursor: grab;
+  cursor: -moz-grab;
+  cursor: -webkit-grab;
+}
